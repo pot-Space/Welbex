@@ -1,0 +1,12 @@
+@import './blocks/header';
+@import './blocks/footer';
+
+.container {
+   margin-left: auto;
+   margin-right: auto;
+   width: 1440px;
+
+   height: 100vh;
+
+   background-color: #333;
+}
