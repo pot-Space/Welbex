@@ -1,1 +1,1 @@
-.container{margin-left:auto;margin-right:auto;width:1440px;height:100vh;background-color:#333}/*# sourceMappingURL=main.min.css.map */
+@import"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap";header{display:flex;width:1140px;height:73px}header ul{display:flex;list-style:none}header ul li{margin-right:30px}body{background-color:#000}a{text-decoration:none;color:inherit;font-size:16px}.container{margin-left:auto;margin-right:auto;max-width:1440px;height:100vh;font-family:"Inter",sans-serif;color:#e4e5ea}/*# sourceMappingURL=main.min.css.map */

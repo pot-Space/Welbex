@@ -1,0 +1,14 @@
+header {
+   display: flex;
+   width: 1140px;
+   height: 73px;
+
+   ul {
+      display: flex;
+      list-style: none;
+
+      li {
+         margin-right: 30px;
+      }
+   }
+}
