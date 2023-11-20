@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@300&display=swap');
 @import './blocks/header';
 @import './blocks/footer';
-
-$light-text: #E4E5EA;
+@import './blocks/variables';
 
 body {
    background-color: #000;
@@ -15,10 +14,75 @@ a {
 }
 
 .container {
+   position: relative;
    margin-left: auto;
    margin-right: auto;
    max-width: 1440px;
    height: 100vh;
    font-family: 'Inter', sans-serif;
-   color: $light-text;
+}
+
+.red-light {
+   position: absolute;
+   width: 311px;
+   height: 311px;
+   top: 251px;
+   left: -102px;
+   border-radius: 311px;
+   opacity: 0.5;
+   background: #961A1A;
+   filter: blur(196px);
+}
+
+.purple-light {
+   position: absolute;
+   width: 259px;
+   height: 259px;
+   top: -154px;
+   left: 602px;
+   border-radius: 259px;
+   opacity: 0.5;
+   background: #833AB4;
+   filter: blur(196px);
+}
+
+.red-ball {
+   position: absolute;
+   width: 28px;
+   height: 28px;
+   top: 500px;
+   left: 851px;
+   filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(2.5px);
+   backdrop-filter: blur(2px);
+}
+
+.red-big-ball {
+   position: absolute;
+   width: 83px;
+   height: 83px;
+   top: 37px;
+   left: 519px;
+   filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+   backdrop-filter: blur(2px);
+}
+
+.text-underlining {
+   position: relative;
+}
+
+.text-underlining:after {
+   content: "";
+   display: block;
+   position: absolute;
+   left: 0;
+   bottom: -3px;
+   width: 0;
+   height: 1px;
+   background-color: $light-text;
+   transition: width 0.3s ease-out;
+}
+
+.text-underlining:hover:after,
+.text-underlining:focus:after {
+   width: 100%;
 }
