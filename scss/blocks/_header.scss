@@ -1,14 +1,79 @@
+@import 'variables';
+
+
 header {
+   margin: 46px auto 0 auto;
    display: flex;
+   justify-content: space-between;
+   align-items: baseline;
    width: 1140px;
-   height: 73px;
 
-   ul {
+   .logo {
+      &__links {
+         display: block;
+      }
+
+      &__text {
+         margin-top: 12px;
+         color: $light-text;
+         font-family: Montserrat;
+         font-size: 10px;
+         font-weight: 300;
+      }
+   }
+
+   nav {
+      width: 50%;
+
+      ul {
+         display: flex;
+         padding: 0;
+         list-style: none;
+
+         li {
+            margin-right: 30px;
+            color: $light-text;
+         }
+      }
+   }
+
+   .phone {
+      color: $light-text;
+      text-align: right;
+   }
+
+   .social {
       display: flex;
-      list-style: none;
 
-      li {
-         margin-right: 30px;
+      &__link {
+         display: block;
+         width: 20px;
+         height: 20px;
+         object-fit: cover;
+
+         &-telegram path,
+         &-viber path,
+         &-whatsapp path {
+            transition: all 0.3s ease-in-out;
+         }
+
+         &-telegram:hover path {
+            fill: #3390EC;
+         }
+
+         &-viber:hover path {
+            fill: #5740C0;
+         }
+
+         &-whatsapp:hover path {
+            fill: #25D366;
+         }
+
+
+
+         &:not(:last-child) {
+            margin-right: 30px;
+         }
       }
    }
 }
