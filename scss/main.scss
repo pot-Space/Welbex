@@ -91,27 +91,98 @@ a {
 
 
 .main {
+   margin: 90px auto 66px;
+   width: 1140px;
+
    &__section {
+      display: flex;
+      padding-top: 8px;
+      margin-bottom: 64px;
+      justify-content: space-between;
 
-      h1 {
-         margin: 0;
-         color: $light-text;
-         font-size: 48px;
-         font-weight: 400;
-
-         span {
-            display: block;
+      .section__side-text {
+         h1 {
+            margin: 0 0 35px 0;
             color: $light-text;
             font-size: 48px;
-            font-weight: 900;
-            color: transparent;
-            background-clip: text;
-            background-image: linear-gradient(90deg, #FCB045 0%, #FF3F78 25%);
+            font-weight: 400;
+
+            span {
+               display: block;
+               color: transparent;
+               font-size: 48px;
+               font-weight: 900;
+               background-clip: text;
+               background-image: linear-gradient(90deg, #FCB045 0%, #FF3F78 70%);
+            }
+         }
+
+         p {
+            margin: 0;
+            color: $light-text;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 400;
          }
       }
+
+      .section__main-text {
+         width: 300px;
+
+         h2 {
+            margin: 12px 0 44px 0;
+            color: $light-text;
+            text-align: right;
+            font-size: 18px;
+            font-weight: 500;
+
+            span {
+               color: transparent;
+               font-size: 18px;
+               font-weight: 700;
+               letter-spacing: 0.9px;
+               background-image: linear-gradient(90deg, #FCB045 37%, #FD1D1D 100%);
+               background-clip: text;
+               text-transform: uppercase;
+            }
+         }
+
+         .main-text__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 32px 20px;
+
+            .main-text__item {
+               width: 135px;
+
+               h3 {
+                  margin: 0 0 6px 0;
+                  color: $light-text;
+                  text-align: right;
+                  font-size: 18px;
+                  font-weight: 500;
+                  letter-spacing: 0.9px;
+                  text-transform: uppercase;
+               }
+
+               p {
+                  margin: 0;
+                  color: $light-text;
+                  text-align: right;
+                  font-family: Montserrat;
+                  font-size: 16px;
+                  font-weight: 400;
+               }
+            }
+         }
+      }
+
    }
 
    &__button {
+      display: block;
+      margin-left: auto;
       padding: 0;
       width: 262px;
       height: 61px;
