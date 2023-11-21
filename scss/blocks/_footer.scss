@@ -1,1 +1,133 @@
 @import 'variables';
+
+footer {
+   margin-top: 546px;
+
+
+
+
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   width: 1140px;
+   height: 315px;
+
+   .about-us {
+      display: flex;
+      padding-top: 60px;
+      margin-bottom: 8px;
+      justify-content: space-between;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+
+      .about-company__header,
+      .menu__header,
+      .contacts__header {
+         margin: 0 0 20px 0;
+         color: $dark-gray;
+         font-size: 14px;
+         font-weight: 700;
+         letter-spacing: 0.7px;
+         text-transform: uppercase;
+      }
+
+      ul {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         margin: 0;
+         padding: 0;
+
+         li {
+            display: block;
+            margin-bottom: 10px;
+            padding: 0;
+            list-style: none;
+            color: $light-text;
+         }
+      }
+
+      .menu {
+         width: 470px;
+
+         ul {
+            height: 164px;
+
+            li {
+               width: fit-content;
+            }
+         }
+
+      }
+
+      .contacts {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+
+         &__phone {
+            display: block;
+            margin-bottom: 20px;
+            width: fit-content;
+            color: $light-text;
+         }
+
+         &__social {
+            display: flex;
+            margin-bottom: 20px;
+
+            .social__link {
+               display: block;
+               width: 20px;
+               height: 20px;
+               object-fit: cover;
+
+               &-telegram path,
+               &-viber path,
+               &-whatsapp path {
+                  transition: all 0.3s ease-in-out;
+               }
+
+               &-telegram:hover path {
+                  fill: #3390EC;
+               }
+
+               &-viber:hover path {
+                  fill: #5740C0;
+               }
+
+               &-whatsapp:hover path {
+                  fill: #25D366;
+               }
+
+               &:not(:last-child) {
+                  margin-right: 10px;
+               }
+            }
+         }
+
+         &__address {
+            color: $light-text;
+            font-style: normal;
+            font-size: 16px;
+            font-weight: 400;
+         }
+      }
+   }
+
+   .copyrigh {
+      margin: 0;
+      color: $light-text;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 400;
+      text-align: right;
+
+      a {
+         display: block;
+         font-size: inherit;
+         text-decoration: underline;
+      }
+   }
+}

@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Montserrat:wght@300&display=swap');
 @import './blocks/header';
 @import './blocks/footer';
 @import './blocks/variables';
 
+
 body {
-   background-color: #000;
+   background-color: #0E1014;
 }
 
 a {
@@ -48,22 +49,23 @@ a {
 
 .red-ball {
    position: absolute;
-   width: 28px;
-   height: 28px;
-   top: 500px;
-   left: 851px;
-   filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(2.5px);
-   backdrop-filter: blur(2px);
+   top: 490px;
+   left: 838px;
+   filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 25%)) blur(2.5px);
 }
 
-.red-big-ball {
+.red-ball-big {
    position: absolute;
-   width: 83px;
-   height: 83px;
-   top: 37px;
-   left: 519px;
-   filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
-   backdrop-filter: blur(2px);
+   top: 27px;
+   left: 505px;
+   filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 25%));
+}
+
+.purple-ball {
+   position: absolute;
+   top: -48px;
+   left: 855px;
+   filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 25%)) blur(5px);
 }
 
 .text-underlining {
@@ -85,4 +87,38 @@ a {
 .text-underlining:hover:after,
 .text-underlining:focus:after {
    width: 100%;
+}
+
+
+.main {
+   &__section {
+
+      h1 {
+         margin: 0;
+         color: $light-text;
+         font-size: 48px;
+         font-weight: 400;
+
+         span {
+            display: block;
+            color: $light-text;
+            font-size: 48px;
+            font-weight: 900;
+            color: transparent;
+            background-clip: text;
+            background-image: linear-gradient(90deg, #FCB045 0%, #FF3F78 25%);
+         }
+      }
+   }
+
+   &__button {
+      padding: 0;
+      width: 262px;
+      height: 61px;
+      color: $light-text;
+      font-size: 16px;
+      font-weight: 500;
+      background: #4077F3;
+      border: none;
+   }
 }

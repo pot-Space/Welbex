@@ -28,10 +28,10 @@ header {
       ul {
          display: flex;
          padding: 0;
-         list-style: none;
 
          li {
             margin-right: 30px;
+            list-style: none;
             color: $light-text;
          }
       }
@@ -68,8 +68,6 @@ header {
          &-whatsapp:hover path {
             fill: #25D366;
          }
-
-
 
          &:not(:last-child) {
             margin-right: 30px;

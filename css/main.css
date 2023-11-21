@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Montserrat:wght@300&display=swap");
 header {
   margin: 46px auto 0 auto;
   display: flex;
@@ -22,10 +22,10 @@ header nav {
 header nav ul {
   display: flex;
   padding: 0;
-  list-style: none;
 }
 header nav ul li {
   margin-right: 30px;
+  list-style: none;
   color: #E4E5EA;
 }
 header .phone {
@@ -58,8 +58,117 @@ header .social__link:not(:last-child) {
   margin-right: 30px;
 }
 
+footer {
+  margin-top: 546px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1140px;
+  height: 315px;
+}
+footer .about-us {
+  display: flex;
+  padding-top: 60px;
+  margin-bottom: 8px;
+  justify-content: space-between;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+footer .about-us .about-company__header,
+footer .about-us .menu__header,
+footer .about-us .contacts__header {
+  margin: 0 0 20px 0;
+  color: #656566;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+footer .about-us ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+footer .about-us ul li {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0;
+  list-style: none;
+  color: #E4E5EA;
+}
+footer .about-us .menu {
+  width: 470px;
+}
+footer .about-us .menu ul {
+  height: 164px;
+}
+footer .about-us .menu ul li {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .about-us .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+footer .about-us .contacts__phone {
+  display: block;
+  margin-bottom: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #E4E5EA;
+}
+footer .about-us .contacts__social {
+  display: flex;
+  margin-bottom: 20px;
+}
+footer .about-us .contacts__social .social__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .about-us .contacts__social .social__link-telegram path, footer .about-us .contacts__social .social__link-viber path, footer .about-us .contacts__social .social__link-whatsapp path {
+  transition: all 0.3s ease-in-out;
+}
+footer .about-us .contacts__social .social__link-telegram:hover path {
+  fill: #3390EC;
+}
+footer .about-us .contacts__social .social__link-viber:hover path {
+  fill: #5740C0;
+}
+footer .about-us .contacts__social .social__link-whatsapp:hover path {
+  fill: #25D366;
+}
+footer .about-us .contacts__social .social__link:not(:last-child) {
+  margin-right: 10px;
+}
+footer .about-us .contacts__address {
+  color: #E4E5EA;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .copyrigh {
+  margin: 0;
+  color: #E4E5EA;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: right;
+}
+footer .copyrigh a {
+  display: block;
+  font-size: inherit;
+  text-decoration: underline;
+}
+
 body {
-  background-color: #000;
+  background-color: #0E1014;
 }
 
 a {
@@ -103,24 +212,23 @@ a {
 
 .red-ball {
   position: absolute;
-  width: 28px;
-  height: 28px;
-  top: 500px;
-  left: 851px;
+  top: 490px;
+  left: 838px;
   filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(2.5px);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
 }
 
-.red-big-ball {
+.red-ball-big {
   position: absolute;
-  width: 83px;
-  height: 83px;
-  top: 37px;
-  left: 519px;
+  top: 27px;
+  left: 505px;
   filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+}
+
+.purple-ball {
+  position: absolute;
+  top: -48px;
+  left: 855px;
+  filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
 }
 
 .text-underlining {
@@ -142,4 +250,31 @@ a {
 .text-underlining:hover:after,
 .text-underlining:focus:after {
   width: 100%;
+}
+
+.main__section h1 {
+  margin: 0;
+  color: #E4E5EA;
+  font-size: 48px;
+  font-weight: 400;
+}
+.main__section h1 span {
+  display: block;
+  color: #E4E5EA;
+  font-size: 48px;
+  font-weight: 900;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(90deg, #FCB045 0%, #FF3F78 25%);
+}
+.main__button {
+  padding: 0;
+  width: 262px;
+  height: 61px;
+  color: #E4E5EA;
+  font-size: 16px;
+  font-weight: 500;
+  background: #4077F3;
+  border: none;
 }/*# sourceMappingURL=main.css.map */
